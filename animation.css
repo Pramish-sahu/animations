@@ -1,0 +1,146 @@
+.box-animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 400px;
+    width: 600px;
+    background-color: aqua;
+}
+
+/* first ball animation*/
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    animation: animation 2s ease-in 0s infinite alternate ;
+}
+@keyframes animation {
+   form{
+    left: 0px;
+   }
+   to{
+    left: 500px;
+   }
+}
+
+/* second ball animation */
+
+.ball2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 200px;
+    animation: animations 1s ease-out 0s infinite alternate ;
+}
+@keyframes animations {
+    form{
+     top: 200px;
+    }
+    to{
+     top: -100px;
+    }
+ }
+
+
+ /* third ball animation */
+
+ .ball3{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    animation: animationss 2s linear 0s infinite alternate ;
+ }
+ @keyframes animationss {
+    0%{
+        left: 0px;
+        top: 100px;
+    }
+    35%{
+        /* left: 250px; */
+        top: 0px;
+    }
+    75%{
+        /* left: 250px; */
+        top: 0px;
+    }
+    100%{
+        left: 500px;
+        top: 100px;
+    }
+ }
+
+
+
+ /* loading animation */
+ .loader{
+    height: 200px;
+    width: 200px;
+    border: 10px solid rgb(252, 252, 247);
+    /* background-color: rgb(6, 126, 231); */
+    border-radius: 50%;
+    border-top: 10px solid black;
+    animation: loader 1s linear 0s infinite normal;
+ }
+ .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+ }
+
+ @keyframes loader {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+ }
+
+
+ /* dj light animation */
+
+ .dj-light{
+    display: flex;
+    justify-content: center;
+ }
+ .dj{
+    height: 380px;
+    width: 250px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+ .light{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 9px;
+    animation: light 0.5s linear 0s infinite alternate;
+ }
+
+ @keyframes light {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+ }
